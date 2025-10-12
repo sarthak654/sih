@@ -1,0 +1,134 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "username": "surveyor1",
+      "password": "password123",
+      "role": "surveyor",
+      "name": "Rajesh Kumar",
+      "email": "rajesh@example.com",
+      "phone": "9876543210"
+    },
+    {
+      "id": 2,
+      "username": "supervisor1",
+      "password": "admin123",
+      "role": "supervisor",
+      "name": "Priya Sharma",
+      "email": "priya@example.com",
+      "phone": "9876543211"
+    }
+  ],
+  "surveys": [
+    {
+      "id": 1,
+      "title": "Village Infrastructure Survey",
+      "description": "Assessment of basic infrastructure facilities",
+      "createdBy": "surveyor1",
+      "createdAt": "2024-01-15T10:30:00.000Z",
+      "status": "submitted",
+      "approvedBy": null,
+      "approvedAt": null,
+      "formData": {
+        "villageName": "Gram Panchayat ABC",
+        "population": "2500",
+        "hasElectricity": true,
+        "hasWaterSupply": true,
+        "hasRoadConnectivity": true,
+        "schoolsCount": "2",
+        "hospitalsCount": "1",
+        "totalLandArea": "500",
+        "cultivatedLand": "350",
+        "mainCrops": ["Wheat", "Rice", "Sugarcane"],
+        "irrigationMethods": ["Tube well", "Canal"],
+        "issues": ["Water quality concerns", "Road maintenance needed"],
+        "recommendations": "Improve water treatment facility and regular road maintenance",
+        "challenges": ["Water scarcity", "Pesticide costs"],
+        "suggestions": "Promote drip irrigation and organic farming"
+      }
+    },
+    {
+      "id": 2,
+      "title": "Agricultural Survey",
+      "description": "Assessment of agricultural practices and challenges",
+      "createdBy": "surveyor1",
+      "createdAt": "2024-01-10T14:20:00.000Z",
+      "status": "draft",
+      "approvedBy": null,
+      "approvedAt": null,
+      "formData": {
+        "villageName": "Gram Panchayat XYZ",
+        "population": "1800",
+        "hasElectricity": true,
+        "hasWaterSupply": false,
+        "hasRoadConnectivity": true,
+        "schoolsCount": "1",
+        "hospitalsCount": "0",
+        "totalLandArea": "300",
+        "cultivatedLand": "200",
+        "mainCrops": ["Maize", "Pulses"],
+        "irrigationMethods": ["Tube well"],
+        "issues": ["Water scarcity", "Healthcare access"],
+        "recommendations": "Install water supply system and build health center",
+        "challenges": ["Market access", "Technology adoption"],
+        "suggestions": "Provide training on modern farming techniques"
+      }
+    },
+    {
+      "id": 3,
+      "title": "Education Facilities Survey",
+      "description": "Assessment of educational infrastructure and enrollment",
+      "createdBy": "surveyor1",
+      "createdAt": "2024-01-08T09:15:00.000Z",
+      "status": "approved",
+      "approvedBy": "supervisor1",
+      "approvedAt": "2024-01-12T16:45:00.000Z",
+      "formData": {
+        "villageName": "Gram Panchayat DEF",
+        "population": "3200",
+        "hasElectricity": true,
+        "hasWaterSupply": true,
+        "hasRoadConnectivity": true,
+        "schoolsCount": "3",
+        "hospitalsCount": "2",
+        "totalLandArea": "750",
+        "cultivatedLand": "500",
+        "mainCrops": ["Cotton", "Vegetables", "Oilseeds"],
+        "irrigationMethods": ["Canal", "Drip irrigation"],
+        "issues": ["Education facilities", "Sanitation"],
+        "recommendations": "Improve school infrastructure and sanitation facilities",
+        "challenges": ["Labor shortage", "Climate change"],
+        "suggestions": "Introduce climate-resistant crop varieties"
+      }
+    }
+  ],
+  "messages": [
+    {
+      "id": 1,
+      "from": "supervisor1",
+      "to": "surveyor1",
+      "subject": "Survey Review",
+      "content": "Please review the submitted survey and provide additional details about water quality issues. The current information is insufficient for proper assessment.",
+      "timestamp": "2024-01-16T11:30:00.000Z",
+      "read": false
+    },
+    {
+      "id": 2,
+      "from": "surveyor1",
+      "to": "supervisor1",
+      "subject": "Re: Survey Review",
+      "content": "I have updated the survey with detailed water quality analysis. Please review the updated information. The water quality issues are primarily related to high iron content and occasional contamination during monsoon season.",
+      "timestamp": "2024-01-16T15:45:00.000Z",
+      "read": true
+    },
+    {
+      "id": 3,
+      "from": "supervisor1",
+      "to": "surveyor1",
+      "subject": "Survey Approved",
+      "content": "Thank you for the detailed information. The survey has been approved and forwarded to the development department for further action.",
+      "timestamp": "2024-01-17T10:20:00.000Z",
+      "read": false
+    }
+  ]
+}
