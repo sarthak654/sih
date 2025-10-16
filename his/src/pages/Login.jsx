@@ -111,8 +111,8 @@ const Login = () => {
         <div style={{ marginTop: '2rem', padding: '1rem', backgroundColor: 'var(--light-color)', borderRadius: 'var(--border-radius)' }}>
           <h5 style={{ marginBottom: '1rem', color: 'var(--dark-color)' }}>Demo Credentials:</h5>
           <div style={{ fontSize: '0.875rem', lineHeight: '1.6' }}>
-            {/* <div><strong>Surveyor:</strong> surveyor1 / password123</div> */}
-            {/* <div><strong>Supervisor:</strong> supervisor1 / admin123</div> */}
+            <div><strong>Surveyor:</strong> surveyor1 / password123</div>
+            <div><strong>Supervisor:</strong> supervisor1 / admin123</div>
           </div>
         </div>
       </div>
